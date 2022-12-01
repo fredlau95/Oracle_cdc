@@ -20,7 +20,6 @@ follow these steps
 
 `ALTER SESSION SET container=PDB1;`
 
-`Alter session set container=PDB1;`
 
 `create tablespace streamsets_tabspace datafile 'streamsets_tabspace.dat' size 10M autoextend on;`
 
@@ -34,5 +33,5 @@ follow these steps
 
 `grant unlimited tablespace to Streamsets;`
 
-select current_scn from v$database;``
+`select current_scn from v$database;`
 
