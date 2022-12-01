@@ -25,6 +25,13 @@ Then run this
 
 `docker run -d --name oraclecdc -p 1521:1521 -e ORACLE_SID="change this" -e ORACLE_PDB=PDB1 -e ORACLE_PWD="change this" -e ENABLE_ARCHIVELOG=true  container-registry.oracle.com/database/enterprise:latest`
 
+The run: 
+`sudo docker exec -it oraclecdc bash`
+then run:
+`sqlplus sys as sysdba`
+Putt in your password
+
+
 `ALTER SESSION SET container=PDB1;`
 
 
@@ -45,4 +52,11 @@ Then run this
 Go back to your desktop move over some files to your vm with sftp.
 
 `sftp -i "your link to your ssh"  opc@"ip address for your instance"`
+
+with the put command, send the ora files to this locaction 
+
+`/opt/oracle/homes/OraDB21Home1/network/admin/`
+
+and send the sql files to oracle path 
+
 
