@@ -7,3 +7,9 @@ Guide to setup Oraclecdc with streamsets
 
 
 .... Somethings you need to install beforehand is docker, follow this guide.
+
+
+Here it will come boxes for easy copy and pasting for the commands needed!
+
+
+`ALTER SESSION SET container=PDB1;`
