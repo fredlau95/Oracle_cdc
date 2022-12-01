@@ -42,3 +42,7 @@ Then run this
 
 `select current_scn from v$database;`
 
+Go back to your desktop move over some files to your vm with sftp.
+
+sftp -i "your link to your ssh"  opc@"ip address for your instance"`
+
