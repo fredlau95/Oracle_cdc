@@ -17,6 +17,13 @@ Need to install the docker image.
 follow these steps 
 
 
+Log in and accept, then run this command
+
+`sudo docker login container-registry.oracle.com`
+
+Then run this
+
+`docker run -d --name oraclecdc -p 1521:1521 -e ORACLE_SID="change this" -e ORACLE_PDB=PDB1 -e ORACLE_PWD="change this" -e ENABLE_ARCHIVELOG=true  container-registry.oracle.com/database/enterprise:latest`
 
 `ALTER SESSION SET container=PDB1;`
 
