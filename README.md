@@ -6,4 +6,4 @@ Guide to setup Oraclecdc with streamsets
 2. Will provide some commands for you so can paste into your vm
 
 
-.... Somethings you need to install before hand is docker, follow this guide.
+.... Somethings you need to install beforehand is docker, follow this guide.
