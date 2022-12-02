@@ -102,5 +102,11 @@ The redo logs could aslo be run several times, this worked better for me when I 
 
 ## Streamsets settings for your pipeline. 
 
+From the picture below you see how the settings you should use. If you are using the schema than I have added in the files setup your streamset pipeline like this.
 
+![Settings for streamsets](https://github.com/fredlau95/Oracle_cdc/blob/main/Pictures_Streamsets/Picture1.png)
+
+![Settings for streamsets](https://github.com/fredlau95/Oracle_cdc/blob/main/Pictures_Streamsets/Picture2.png)
+
+![Settings for streamsets](https://github.com/fredlau95/Oracle_cdc/blob/main/Pictures_Streamsets/Picture3.png)
 
