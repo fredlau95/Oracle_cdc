@@ -2,7 +2,7 @@
 Guide to setup Oraclecdc with streamsets,
 Noticed now after trying to set up Oracle than it cant run on the always free option since the memory is to little and sql will crash. 
 
-## some steps to follow, 
+## some steps to follow
 1. if you dont have you might want to setup a oracle instance if this is for home use and playing around. You get 30 days for free on the site. 
 2. Will provide some commands for you so can paste into your vm
 
