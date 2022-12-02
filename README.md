@@ -5,6 +5,7 @@ Noticed now after trying to set up Oracle than it cant run on the always free op
 ## some steps to follow
 1. if you dont have you might want to setup a oracle instance if this is for home use and playing around. You get 30 days for free on the site. 
 2. Will provide some commands for you so can paste into your vm
+3. When making the instance remember to save the ssh key from one of the options. This ssh-key should be moved to the same folder where your scripts are for easier use.
 
 ## Follow this guide to install the docker on Oracle. 
 
@@ -73,7 +74,7 @@ Putt in your password that you choose from the docker run command
 
 Go back to your desktop move over the files to your vm with sftp.
 
-`sftp -i "your link to your ssh"  opc@"ip address for your instance"`
+`sftp -i "your link to your ssh-key"  opc@"ip address for your instance"`
 
 with the put command, send the ora files to this locaction 
 
