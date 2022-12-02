@@ -2,7 +2,7 @@
 Guide to setup Oraclecdc with streamsets
 
 # some steps to follow, 
-1. if you dont have you might want to setup a oracle instance if this is for home use. 
+1. if you dont have you might want to setup a oracle instance if this is for home use, here you have to maske sure that the instance is satying in free mode so you dont need to pay for using it. 
 2. Will provide some commands for you so can paste into your vm
 
 
