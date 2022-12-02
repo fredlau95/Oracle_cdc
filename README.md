@@ -19,7 +19,7 @@ Use this command on the ssh key you downloaded
 
 Log in and accept, then run this command
 
-login in here and accept the terms for the database container-registry.oracle.com
+login in here and accept the terms for enterprise in the database section container-registry.oracle.com
 [Container-oracle](https://container-registry.oracle.com)
 `sudo docker pull container-registry.oracle.com/database/enterprise:latest`
 
