@@ -92,9 +92,11 @@ This will first make the schema for our database and then load the data into our
 
 ## The last part is to run the log files so streamsets can pick it up and send it to Snowflake: 
 
-`ALTER SESSION SET container=cdb$root;
+The redo logs could aslo be run several times, this worked better for me when I made it work the first time. 
 
-EXECUTE dbms_logmnr_d.build(options=> dbms_logmnr_d.store_in_redo_logs); `
+`ALTER SESSION SET container=cdb$root;` 
+
+`EXECUTE dbms_logmnr_d.build(options=> dbms_logmnr_d.store_in_redo_logs);`
 
 
 
