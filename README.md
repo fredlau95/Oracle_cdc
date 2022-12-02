@@ -38,9 +38,12 @@ then run:
 
 `sqlplus sys as sysdba`
 
-Putt in your password
+Putt in your password that you choose from the docker run command
 
 ## Next part is to connect to streamsets:
+
+`select name from V$database;`
+
 
 `ALTER SESSION SET container=PDB1;`
 
