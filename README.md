@@ -59,6 +59,14 @@ with the put command, send the ora files to this locaction
 
 `/opt/oracle/homes/OraDB21Home1/network/admin/`
 
-and send the sql files to oracle path 
+and send the sql files to correct path, for me it is here 
+`sudo docker cp ot_schema.sql oraclecdc:/home/oracle/ot_schema.sql`
+
+and then you will go into the bash script and putt in your password, and then 
+`@ot_schema.sql`
+`@ot_data.sql`
+
+This will first make the schema for our database and then load the data into our database. 
+
 
 
