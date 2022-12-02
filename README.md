@@ -100,4 +100,7 @@ The redo logs could aslo be run several times, this worked better for me when I 
 `EXECUTE dbms_logmnr_d.build(options=> dbms_logmnr_d.store_in_redo_logs);`
 
 
+## Streamsets settings for your pipeline. 
+
+
 
