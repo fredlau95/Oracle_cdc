@@ -6,13 +6,11 @@ Guide to setup Oraclecdc with streamsets
 2. Will provide some commands for you so can paste into your vm
 
 
-.... Somethings you need to install beforehand is docker, follow this guide.
+.... Somethings you need to install beforehand is the docker image. Follow this guide to step 5. 
 [Docker download](https://geekscircuit.com/how-to-install-docker-on-oracle-linux-8-7/)
 
 Here it will come boxes for easy copy and pasting for the commands needed!
 
-
-Need to install the docker image.
 
 follow these steps 
 
