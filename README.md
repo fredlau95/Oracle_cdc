@@ -16,6 +16,8 @@ Need to install the docker image.
 
 follow these steps 
 
+Use this command on the ssh key you downloaded
+`chmod 400 your key name`
 
 Log in and accept, then run this command
 
