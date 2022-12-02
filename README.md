@@ -106,6 +106,8 @@ From the picture below you see how the settings you should use. If you are using
 
 ![Settings for streamsets](https://github.com/fredlau95/Oracle_cdc/blob/main/Pictures_Streamsets/Picture1.png)
 
+Change the warehouse and database option to where you want your pipeline to end up. 
+
 ![Settings for streamsets](https://github.com/fredlau95/Oracle_cdc/blob/main/Pictures_Streamsets/Picture2.png)
 
 ![Settings for streamsets](https://github.com/fredlau95/Oracle_cdc/blob/main/Pictures_Streamsets/Picture3.png)
