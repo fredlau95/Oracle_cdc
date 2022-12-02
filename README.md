@@ -1,17 +1,19 @@
 # Oracle_cdc
-Guide to setup Oraclecdc with streamsets
+Guide to setup Oraclecdc with streamsets,
+Noticed now after trying to set up Oracle than it cant run on the always free option since the memory is to little and sql will crash. 
 
 # some steps to follow, 
-1. if you dont have you might want to setup a oracle instance if this is for home use, here you have to maske sure that the instance is satying in free mode so you dont need to pay for using it. 
+1. if you dont have you might want to setup a oracle instance if this is for home use and playing around. You get 30 days for free on the site. 
 2. Will provide some commands for you so can paste into your vm
 
+## Follow this guide to install the docker on Oracle. 
 
-.... Somethings you need to install beforehand is the docker image. Follow this guide to step 5. 
+Somethings you need to install beforehand is the docker image. Follow this guide to step 5. 
 [Docker download](https://geekscircuit.com/how-to-install-docker-on-oracle-linux-8-7/)
 
 Here it will come boxes for easy copy and pasting for the commands needed!
 
-
+## Follow these steps to connect to the sql, and to send it to snowflake with streamsets.
 follow these steps 
 
 Use this command on the ssh key you downloaded
