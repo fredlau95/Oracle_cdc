@@ -17,41 +17,54 @@ Here it will come boxes for easy copy and pasting for the commands needed!
 follow these steps 
 
 Use this command on the ssh key you downloaded
+
 `chmod 400 your key name`
 
 Log in and accept, then run this command
 
 login in here and accept the terms for enterprise in the database section container-registry.oracle.com
 [Container-oracle](https://container-registry.oracle.com)
+
 `sudo docker pull container-registry.oracle.com/database/enterprise:latest`
 
 Then run this
 
 `docker run -d --name oraclecdc -p 1521:1521 -e ORACLE_SID="change this" -e ORACLE_PDB=PDB1 -e ORACLE_PWD="change this" -e ENABLE_ARCHIVELOG=true  container-registry.oracle.com/database/enterprise:latest`
 
-The run: 
+Then run: 
+
 `sudo docker exec -it oraclecdc bash`
 then run:
+
 `sqlplus sys as sysdba`
+
 Putt in your password
 
+## Next part is to connect to streamsets:
 
 `ALTER SESSION SET container=PDB1;`
 
 
-`create tablespace streamsets_tabspace datafile 'streamsets_tabspace.dat' size 10M autoextend on;`
+`create tablespace streamsets_tabspace datafile 'streamsets_tabspace.dat' size 10M autoextend on;` 
 
-`create temporary tablespace streamsets_tabspace1_temp tempfile 'streamsets_tabspace1_temp.dat' size 5M autoextend on;`
 
-`create user streamsets identified by 123456 default tablespace streamsets_tabspace temporary tablespace streamsets_tabspace1_temp;`
+`create temporary tablespace streamsets_tabspace1_temp tempfile 'streamsets_tabspace1_temp.dat' size 5M autoextend on;` 
 
-`grant create session to Streamsets;`
 
-`grant create table to Streamsets;`
+`create user streamsets identified by 123456 default tablespace streamsets_tabspace temporary tablespace streamsets_tabspace1_temp;` 
 
-`grant unlimited tablespace to Streamsets;`
 
-`select current_scn from v$database;`
+`grant create session to Streamsets;` 
+
+
+`grant create table to Streamsets;` 
+
+
+`grant unlimited tablespace to Streamsets;` 
+
+
+`select current_scn from v$database;` 
+
 
 Go back to your desktop move over some files to your vm with sftp.
 
