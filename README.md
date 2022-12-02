@@ -68,8 +68,10 @@ Putt in your password that you choose from the docker run command
 
 `select current_scn from v$database;` 
 
+## Here you will copy over the files into your vm 
 
-Go back to your desktop move over some files to your vm with sftp.
+
+Go back to your desktop move over the files to your vm with sftp.
 
 `sftp -i "your link to your ssh"  opc@"ip address for your instance"`
 
@@ -81,10 +83,18 @@ and send the sql files to correct path, for me it is here
 `sudo docker cp ot_schema.sql oraclecdc:/home/oracle/ot_schema.sql`
 
 and then you will go into the bash script and putt in your password, and then 
-`@ot_schema.sql`
+
+`@ot_schema.sql` 
+
 `@ot_data.sql`
 
 This will first make the schema for our database and then load the data into our database. 
+
+## The last part is to run the log files so streamsets can pick it up and send it to Snowflake: 
+
+`ALTER SESSION SET container=cdb$root;
+
+EXECUTE dbms_logmnr_d.build(options=> dbms_logmnr_d.store_in_redo_logs); `
 
 
 
