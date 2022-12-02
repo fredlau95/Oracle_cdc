@@ -91,7 +91,7 @@ and then you will go into the bash script and putt in your password, and then
 
 This will first make the schema for our database and then load the data into our database. 
 
-## The last part is to run the log files so streamsets can pick it up and send it to Snowflake: 
+## The last part is to run the redo log so streamsets can pick it up and send it to Snowflake: 
 
 The redo logs could aslo be run several times, this worked better for me when I made it work the first time. 
 
