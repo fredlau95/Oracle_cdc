@@ -173,7 +173,7 @@ and send the sql files to correct path, for me it is here
 
 and then you will go into the bash script and putt in your password, and then 
 
-´ALTER USER C##STREAMSETS quota unlimited ON users;`
+`ALTER USER C##STREAMSETS quota unlimited ON users;`
 
 `@ot_schema.sql` 
 
