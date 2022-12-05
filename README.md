@@ -42,7 +42,13 @@ then run:
 
 `sqlplus sys as sysdba`
 
-Putt in your password that you choose from the docker run command
+Here you need to wait intil it is ready, it wont tell you when you can use it, but you can check running the commands bellow
+
+
+`sudo docker logs oraclecdc`
+
+
+Put in your password that you choose from the docker run command
 
 ## Next part is to connect to streamsets:
 
@@ -91,10 +97,6 @@ and then you will go into the bash script and putt in your password, and then
 `@ot_schema.sql` 
 
 `@ot_data.sql`
-
-Here you need to wait intil it is ready, it wont tell you when you can use it, but you can check running the commands bellow
-
-´sudo docker logs oraclecdc´
 
 
 This will first make the schema for our database and then load the data into our database. 
