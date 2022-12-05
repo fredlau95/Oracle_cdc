@@ -171,7 +171,9 @@ with the put command, send the ora files to this locaction
 and send the sql files to correct path, for me it is here 
 `sudo docker cp ot_schema.sql oraclecdc:/home/oracle/ot_schema.sql`
 
-and then you will go into the bash script and putt in your password, and then 
+and then you will go into the bash script and putt in your password, and then remember to stay in PDB1 when you load in the schema and the data.
+
+`ALTER SESSION SET container=PDB1;`
 
 `ALTER USER C##STREAMSETS quota unlimited ON users;`
 
