@@ -37,6 +37,7 @@ Then run this
 Then run: 
 
 `sudo docker exec -it oraclecdc bash`
+
 then run:
 
 `sqlplus sys as sysdba`
