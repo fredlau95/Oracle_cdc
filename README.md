@@ -19,6 +19,8 @@ follow these steps
 
 Use this command on the ssh key you downloaded
 
+You only need to run chmood on macbooks 
+
 `chmod 400 your key name`
 
 `ssh -i "ssh key name here" opc@"your vm ip address here"`
