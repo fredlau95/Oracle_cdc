@@ -21,6 +21,8 @@ Use this command on the ssh key you downloaded
 
 `chmod 400 your key name`
 
+`ssh -i "ssh key name here" opc@"your vm ip address here"`
+
 Log in and accept, then run this command
 
 login in here and accept the terms for enterprise in the database section container-registry.oracle.com
