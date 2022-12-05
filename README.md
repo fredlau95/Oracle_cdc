@@ -92,6 +92,11 @@ and then you will go into the bash script and putt in your password, and then
 
 `@ot_data.sql`
 
+Here you need to wait intil it is ready, it wont tell you when you can use it, but you can check running the commands bellow
+
+´sudo docker logs oraclecdc´
+
+
 This will first make the schema for our database and then load the data into our database. 
 
 ## The last part is to run the redo log so streamsets can pick it up and send it to Snowflake: 
