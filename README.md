@@ -166,7 +166,9 @@ Go back to your desktop move over the files to your vm with sftp.
 
 with the put command, send the ora files to this locaction 
 
-`/opt/oracle/homes/OraDB21Home1/network/admin/`
+`sudo docker cp tnsnames.ora/opt/oracle/homes/OraDB21Home1/network/admin/tnsnames.ora`
+
+change the name and put in the listener file.
 
 and send the sql files to correct path, for me it is here
 
