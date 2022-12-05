@@ -26,6 +26,8 @@ Log in and accept, then run this command
 login in here and accept the terms for enterprise in the database section container-registry.oracle.com
 [Container-oracle](https://container-registry.oracle.com)
 
+`sudo docker login container-registry.oracle.com/database/enterprise:latest`
+
 `sudo docker pull container-registry.oracle.com/database/enterprise:latest`
 
 Then run this
