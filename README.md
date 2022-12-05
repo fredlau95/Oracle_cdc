@@ -43,15 +43,14 @@ Then run:
 `sudo docker exec -it oraclecdc bash`
 
 then run:
+
 `sudo docker logs oraclecdc`
 
 `sqlplus sys as sysdba`
 
 Here you need to wait intil it is ready, before you can go into the next command. 
 
-
 `sqlplus sys as sysdba`
-
 
 Put in your password that you choose from the docker run command
 
