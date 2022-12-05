@@ -168,7 +168,8 @@ with the put command, send the ora files to this locaction
 
 `/opt/oracle/homes/OraDB21Home1/network/admin/`
 
-and send the sql files to correct path, for me it is here 
+and send the sql files to correct path, for me it is here
+
 `sudo docker cp ot_schema.sql oraclecdc:/home/oracle/ot_schema.sql`
 
 and then you will go into the bash script and putt in your password, and then remember to stay in PDB1 when you load in the schema and the data.
@@ -188,9 +189,13 @@ This will first make the schema for our database and then load the data into our
 
 The redo logs could aslo be run several times, this worked better for me when I made it work the first time. 
 
-`ALTER SESSION SET container=cdb$root;` 
+```
+ALTER SESSION SET container=cdb$root;
 
-`EXECUTE dbms_logmnr_d.build(options=> dbms_logmnr_d.store_in_redo_logs);`
+EXECUTE dbms_logmnr_d.build(options=> dbms_logmnr_d.store_in_redo_logs);
+
+```
+
 
 
 ## Streamsets settings for your pipeline. 
