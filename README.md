@@ -204,6 +204,7 @@ EXECUTE dbms_logmnr_d.build(options=> dbms_logmnr_d.store_in_redo_logs);
 
 From the picture below you see how the settings you should use. If you are using the schema than I have added in the files setup your streamset pipeline like this.
 
+Somethings you need to do before you start feeding new records to your sql is to set up streamsets and start the pipeline. It is important to be careful with typos or it wont work.
 
 ![Settings for streamsets](https://github.com/fredlau95/Oracle_cdc/blob/main/Pictures_Streamsets/Picture1.png)
 
