@@ -206,6 +206,14 @@ From the picture below you see how the settings you should use. If you are using
 
 Somethings you need to do before you start feeding new records to your sql is to set up streamsets and start the pipeline. It is important to be careful with typos or it wont work.
 
+Also if you are using the data that are provided in this repository under the origin for Oraclecdc under Credentials option you need to provide username and password.
+
+```
+Username = c##streamsets
+
+Password = streamsets
+``` 
+
 ![Settings for streamsets](https://github.com/fredlau95/Oracle_cdc/blob/main/Pictures_Streamsets/Picture1.png)
 
 Change the option for PDB like the picture bellow
